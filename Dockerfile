@@ -1,8 +1,9 @@
-FROM debian:jessie
-MAINTAINER Larry Howard <larry.howard@vanderbilt.edu>
+FROM ubuntu:18.04
+#FROM debian:jessie
+#MAINTAINER Larry Howard <larry.howard@vanderbilt.edu>
 
-ENV DEBIAN_FRONTEND noninteractive
-
+#ENV DEBIAN_FRONTEND noninteractive
+USER 0
 # install Ruby
 RUN apt-get update && apt-get install -yqq ruby rubygems-integration
 
