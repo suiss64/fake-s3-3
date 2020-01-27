@@ -13,5 +13,5 @@ RUN gem install fakes3 -v 0.2.5
 # run fake-s3
 RUN mkdir -p /fakes3_root
 ENTRYPOINT ["/usr/local/bin/fakes3"]
-CMD ["-r",  "/fakes3_root", "-p",  "4569"]
+CMD ["-r",  "/fakes3_root", "-p",  "4569", "--license", "2809169551"]
 EXPOSE 4569
